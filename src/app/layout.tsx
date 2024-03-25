@@ -15,7 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="bg-gradient-to-r from-slate-950 to-blue-950 text-white bg-cover"
+      style={{
+        backgroundImage:
+          "url(https://imgs.search.brave.com/K7noCNRp8CFYDZ4wE4ZbVt8tj9JVa3xzRG3gIx67wL4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MTcxNjc2ODUyODQt/OTZhMjc2ODFhZDc1/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRoOGZH/UmhjbXNsTWpCaWJI/VmxKVEl3WW1GamEy/ZHliM1Z1Wkh4bGJu/d3dmSHd3Zkh4OE1B/PT0)",
+      }}
+    >
       <body className={inter.className}>{children}</body>
     </html>
   );
