@@ -8,9 +8,9 @@ export default function Navbar() {
       </Link>
       <Link
         className="bg-white p2 text-slate-800 rounded-3xl"
-        href={"/addTopic"}
+        href={"/addProduct"}
       >
-        <p className="p-2">Add Topic</p>
+        <p className="p-2">Add Product</p>
       </Link>
     </nav>
   );

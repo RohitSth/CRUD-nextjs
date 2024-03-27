@@ -28,7 +28,7 @@ export default function ListItems() {
         <td className="px-6 py-4">Laptop</td>
         <td className="px-6 py-4">$2999</td>
         <td className="px-6 py-4 flex justify-start">
-          <Link href={"/editTopic/123"}>
+          <Link href={"/editProduct/123"}>
             <HiPencilAlt size={24} />
           </Link>
           <DeleteBtn />
