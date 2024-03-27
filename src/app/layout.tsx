@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,12 @@ export default function RootLayout({
           "url(https://imgs.search.brave.com/K7noCNRp8CFYDZ4wE4ZbVt8tj9JVa3xzRG3gIx67wL4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MTcxNjc2ODUyODQt/OTZhMjc2ODFhZDc1/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRoOGZH/UmhjbXNsTWpCaWJI/VmxKVEl3WW1GamEy/ZHliM1Z1Wkh4bGJu/d3dmSHd3Zkh4OE1B/PT0)",
       }}
     >
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="max-w-5xl mx-auto p-4">
+          <Navbar />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
