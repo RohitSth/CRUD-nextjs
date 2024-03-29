@@ -12,9 +12,6 @@ const List = () => {
           <TableHead />
           <tbody>
             <ListItems />
-            <ListItems />
-            <ListItems />
-            <ListItems />
           </tbody>
         </table>
       </div>
